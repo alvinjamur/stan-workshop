@@ -1,13 +1,13 @@
 # Stan for Econometrics
 
-[Stan](http://mc-stan.org/) is a powerful probabilistic programming language that is useful for Bayesian inference. This is intended to be a "quick-start" guide for those who want to get familiar with Bayesian modeling in R's interface with Stan, known as RStan. It is not a replacement for the [Stan Reference Manual](http://mc-stan.org/documentation/) which is an unequivocally useful resource for using Stan. I recommend getting familiar with it if you want to get proficient with Stan. 
+[Stan](http://mc-stan.org/) is a powerful probabilistic programming language that is useful for Bayesian inference. This is intended to be a "quick-start" guide for those who want to get familiar with Bayesian modeling in R's interface with Stan, known as RStan. It is not a replacement for the [Stan Reference Manual](http://mc-stan.org/documentation/) which is an unequivocally useful resource for using Stan. I recommend getting familiar with it if you want to get proficient with Stan.
 
 The files here cover modeling the canonical Eight Schools data set, and also provides information on how to write least squares, logistic, and time series models in Stan. Also included is a brief example on parameter recovery.
 
 * `r_basics.R` - useful for getting the fundamentals down in R so that you can start running Bayesian inference in Stan.
 * `stan_tutorial.R` - code to import data, run the Stan files, and extract information from the fitted model.
 
-NOTE: all files will be uploaded as of Thursday (02.10.16) evening.
+NOTE: all files will be uploaded by Thursday (02.10.16) evening.
 
 ## Eight Schools Example
 
@@ -16,7 +16,7 @@ The Eight Schools Data was an Educational Testing Service study to determine the
 * TE: treatment effect
 * SE: standard error of treatment effect
 
-The models follow Daniel Lee's [slides](http://astrostatistics.psu.edu/su14/lectures/Daniel-Lee-Stan-2.pdf) and consist of no pooling, complete pooling, partially pooling, and hierarchical models.
+The models follow Daniel Lee's [slides](http://astrostatistics.psu.edu/su14/lectures/Daniel-Lee-Stan-2.pdf) and consist of no pooling, complete pooling, partial pooling, and hierarchical models.
 
 ## Parameter Recovery
 
