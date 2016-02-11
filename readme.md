@@ -1,6 +1,6 @@
 # Stan for Econometrics
 
-[Stan](http://mc-stan.org/) is a powerful probabilistic programming language that is useful for Bayesian inference. This is intended to be a "quick-start" guide for those who want to get familiar with Bayesian modeling in R's interface with Stan, known as RStan. It is not a replacement for the [Stan Reference Manual](http://mc-stan.org/documentation/) which is an unequivocally useful resource for using Stan.
+[Stan](http://mc-stan.org/) is a powerful probabilistic programming language that is useful for Bayesian inference. This is intended to be a "quick-start" guide for those who want to get familiar with Bayesian modeling in R's interface with Stan, known as RStan. It is not a replacement for the [Stan Reference Manual](http://mc-stan.org/documentation/) which is an unequivocally useful resource for using Stan. I recommend getting familiar with it if you want to get proficient with Stan. 
 
 The files here cover modeling the canonical Eight Schools data set, and also provides information on how to write least squares, logistic, and time series models in Stan. Also included is a brief example on parameter recovery.
 
