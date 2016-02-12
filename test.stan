@@ -1,0 +1,1 @@
+# an example of a stan file

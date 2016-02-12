@@ -1,3 +1,6 @@
+# install.packages("rstan")
+library(rstan)
+list.files()
 
 #############################
 ### EIGHT SCHOOLS EXAMPLE ###
@@ -14,7 +17,31 @@ eightschools <- data.frame(
 names(eightschools) <- c("school","te","se")
 
 # specify a list of the data to run in stan
+eightschools_dataforstan <- list() # create a list
+eightschools_dataforstan$y <- as.integer(eightschools[,2]) # y value for te
+eightschools_dataforstan$sigma <- as.integer(eightschools[,3]) # sigma for se
+eightschools_dataforstan$J <- length(eightschools[,2]) # length of vector
+
 # school level effects
+stanc("eightschools_notpooled.stan")
+eightschools_fit1 <- stan(file = "eightschools_notpooled.stan", data = eightschools_dataforstan, chains = 4, iter = 50)
+traceplot(eightschools_fit1)
+print(eightschools_fit1)
+
+eightschools_fit1_extract <- extract(eightschools_fit1)
+names(eightschools_fit1_extract)
+
+dim(eightschools_fit1_extract$theta)
+
+eightschools_fit1_theta <- list()
+
+png("eightschools_fit1_theta.png", width = 1500, height = 800, pointsize = 25)
+par(mfrow=c(2,4))
+for (i in 1:8) {
+  hist(eightschools_fit1_extract$theta[,i], col = "grey", main = paste("Theta",i), xlab = "Theta")
+  abline(v=mean(eightschools_fit1_extract$theta[,i]), col = "red", lwd = 3)
+}
+dev.off()
 # complete pooling
 # partial pooling
 # hierarchical

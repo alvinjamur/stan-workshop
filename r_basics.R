@@ -140,6 +140,10 @@ beta_rand <- rbeta(1000,2,2)
 hist(beta_rand, col = "grey", main = "Histogram Beta(2,2)", xlab = "x")
 abline(v = mean(beta_rand), col = "red", lwd = 3)
 
+# INSTALL RSTAN!
+install.packages("rstan")
+library(rstan)
+
 #######################
 ### newton's method ###
 #######################
