@@ -30,7 +30,7 @@ The data used in these examples comes from Green's [Econometric Analysis](http:/
 
 This example uses the Cornwell and Rupert data labor market data on 595 individuals over 7 years.
 
-#### Simple Hierarchical Least Squares
+### Simple Hierarchical Least Squares
 
 Using the same dataset above split the data according to gender and estimate separate models for each demographic. A prior can then be specified for the degree of pooling.  
 
