@@ -7,7 +7,6 @@ The files here cover modeling the canonical Eight Schools data set, and also pro
 * `r_basics.R` - useful for getting the fundamentals down in R so that you can start running Bayesian inference in Stan.
 * `stan_tutorial.R` - code to import data, run the Stan files, and extract information from the fitted model.
 
-NOTE: all files will be uploaded by Thursday (02.10.16) evening.
 
 ## Eight Schools Example
 
